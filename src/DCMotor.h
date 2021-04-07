@@ -63,6 +63,7 @@ public:
 	float getRampConstant();
 	
 private:
+
 	//State machine
 	bool _newState = false;
 	uint8_t _state = 0;

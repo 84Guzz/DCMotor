@@ -199,7 +199,7 @@ void DCMotor::update(){
 	}	
 	
 	//RUNNING A / RUNNING B
-	if((_state == cRUNNING_A || _state == cRUNNING_A) && _newState) { // State entry
+	if((_state == cRUNNING_A || _state == cRUNNING_B) && _newState) { // State entry
 
 		//Write final speed setpoint
 		_speed = (int)_setSpeed_f;			

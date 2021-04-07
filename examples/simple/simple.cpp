@@ -21,19 +21,19 @@ void setup()
 void loop()
 {
   motor.update();
-  switch(motor.getState()){
-    case DC_MOTOR_RUNNING_A:
-      motor.cmdB();
+  switch (motor.getState())
+  {
+  case DC_MOTOR_RUNNING_A:
+    motor.cmdB();
     break;
-    case DC_MOTOR_RUNNING_B:
-      motor.cmdA();
+  case DC_MOTOR_RUNNING_B:
+    motor.cmdA();
     break;
   }
 
   if (motor.getSpeed() > 0)
   {
     Serial.println("speed:" + String(motor.getSpeed()));
-    
   }
   delay(100);
 }

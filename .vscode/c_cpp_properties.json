@@ -8,7 +8,6 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "C:/Users/gvandersluijs/Google Drive/Projects/Arduino/DCMotor/include",
                 "C:/Users/gvandersluijs/Google Drive/Projects/Arduino/DCMotor/examples/simple",
                 "C:/Users/gvandersluijs/Google Drive/Projects/Arduino/DCMotor/src",
                 "C:/Users/gvandersluijs/Google Drive/Projects/Arduino/DCMotor/.pio/libdeps/uno/elapsedMillis",
@@ -30,7 +29,6 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "C:/Users/gvandersluijs/Google Drive/Projects/Arduino/DCMotor/include",
                     "C:/Users/gvandersluijs/Google Drive/Projects/Arduino/DCMotor/examples/simple",
                     "C:/Users/gvandersluijs/Google Drive/Projects/Arduino/DCMotor/src",
                     "C:/Users/gvandersluijs/Google Drive/Projects/Arduino/DCMotor/.pio/libdeps/uno/elapsedMillis",
