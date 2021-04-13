@@ -1,0 +1,19 @@
+{
+	"name": "DCMotor",
+	"version": "1.0.0",
+	"keywords": "motion",
+	"description": "Library to drive a DC motor with ramp up/down",
+	"authors":
+	[
+		{
+		"name": "Guus van der Sluijs",
+		"email": "guus@guusvandersluijs.com",
+		}
+	],
+	"repository":
+	{
+		"type": "git",
+		"url": "https://github.com/84Guzz/DCMotor.git"
+	},
+	"frameworks": "arduino"
+}
