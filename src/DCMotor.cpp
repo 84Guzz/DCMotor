@@ -139,7 +139,11 @@ void DCMotor::update(){
 		_inB = false;
 		
 		//Calculate ramp constant
-		_rampConstant = 255.0 / (float)_startRampA;
+		if (_startRampA > 0) {
+			_rampConstant = 255.0 / (float)_startRampA;
+		} else {
+			_rampConstant = 0.0;	
+		}
 		
 		//Store speed at start of acceleration
 		_startSpeed = _speed_f;
@@ -173,7 +177,11 @@ void DCMotor::update(){
 		_inB = true;
 		
 		//Calculate ramp constant
-		_rampConstant = 255.0 / (float)_startRampB;
+		if(_startRampB > 0) {
+			_rampConstant = 255.0 / (float)_startRampB;
+		} else {
+			_rampConstant = 0.0;	
+		}
 		
 		//Store speed at start of acceleration
 		_startSpeed = _speed_f;
