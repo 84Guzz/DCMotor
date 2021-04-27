@@ -219,7 +219,11 @@ void DCMotor::update(){
 		if(_prevState == cSTARTING_B or _prevState == cRUNNING_B) _cmdB = false;		
 		
 		//Calculate ramp constant
-		_rampConstant = 255.0 / (float)_stopRamp;
+		if (_stopRamp > 0) {
+			_rampConstant = 255.0 / (float)_stopRamp;
+		} else {
+			_rampConstant = 0.0;	
+		}
 		
 		//Store speed at start of deceleration
 		_startSpeed = _speed_f;
@@ -231,7 +235,7 @@ void DCMotor::update(){
 			_speed_f = _startSpeed - (_rampConstant * (float)_stateTimer);
 			_speed_f = constrain(_speed_f, 0.0, _startSpeed); //Limit between 0 and set speed
 		} else {
-			_speed = 0; //No ramp specified, jump directly to zero speed
+			_speed_f = 0; //No ramp specified, jump directly to zero speed
 		}
 		//Convert speed and write to pin
 		_speed = (int)_speed_f;
